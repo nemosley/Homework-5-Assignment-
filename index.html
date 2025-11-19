@@ -1,48 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM and Event Demo</title>
-    <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-.greeting {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-button {
-    margin: 5px;
-    padding: 8px 12px;
-    font-size: 16px;
-    
-}
-#output {
-    margin: 5px;
-    color: green;
-}
-
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Regex Example</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; padding: 24px; }
+    h1 { font-size: 40px; margin: 0 0 18px 0; }
+    label, p { margin: 8px 0; }
+    input[type="text"] { padding: 8px; width: 260px; border: 1px solid #888; }
+    button { padding: 6px 10px; margin-left: 8px; }
+    #message { display: inline-block; margin-top: 12px; font-weight: 600; }
+    #message.invalid { color: #d33; }
+    #message.valid { color: #0a0; }
+  </style>
 </head>
 <body>
-    <!-- We will manipulate this part!!! -->
-    <p class="greeting">Hello, welcome to DOM & Event Demo</p>
+  <h1>Simple Regex Example</h1>
+  <p>Type the name(letters only)</p>
+  <input id="nameInput" type="text" aria-label="name input" />
+  <button id="validateBtn">Validate</button>
+  <div id="message" role="status" aria-live="polite"></div>
 
-
-    <!-- buttons for different actions -->
-    <p>Buttons for different actions:</p>
-    <button class="change-color-btn">Change Text Color</button>
-    <button class="add-item-btn">Add Paragraph</button>
-    <button class="hover-btn">Hover Over Me</button>
-
- 
-    <div id="output"></div>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
